@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+$(document).ready(function(){
 
   // Variables
   var $codeSnippets = $('.code-example-body'),
@@ -87,8 +87,7 @@ jQuery(document).ready(function($) {
       $(this).html(newContent)
     })
   }
-
-
+  
   init();
 
 });

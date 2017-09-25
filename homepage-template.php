@@ -10,22 +10,19 @@
 get_header(); 
 /*get_template_part( 'menu', 'index' ); */ //the  menu + logo/site title ?>
 
-<div class="container">
+  <div class="container">
     <section class="header">
       <h2 class="title">A dead simple, responsive boilerplate,<br>developed for WordPress.</h2>
       <a class="button button-primary" href="https://github.com/ChrisNaylor/WP-Skeleton-Theme/archive/master.zip">Download</a>
       <div class="value-props row">
         <div class="four columns value-prop">
-          <img class="value-img" src="<?php echo get_template_directory_uri() . '/images/feather.svg'?>">
-          Light as a feather at ~400 lines &amp; built with mobile in mind.
+          <img class="value-img" src="<?php echo get_template_directory_uri() . '/images/feather.svg'?>"> Light as a feather at ~400 lines &amp; built with mobile in mind.
         </div>
         <div class="four columns value-prop">
-          <img class="value-img" src="<?php echo get_template_directory_uri() . '/images/pens.svg'?>">
-          Styles designed to be a starting point, not a UI framework.
+          <img class="value-img" src="<?php echo get_template_directory_uri() . '/images/pens.svg'?>"> Styles designed to be a starting point, not a UI framework.
         </div>
         <div class="four columns value-prop">
-          <img class="value-img" src="<?php echo get_template_directory_uri() . '/images/watch.svg'?>">
-          Quick to start with zero compiling or installing necessary.
+          <img class="value-img" src="<?php echo get_template_directory_uri() . '/images/watch.svg'?>"> Quick to start with zero compiling or installing necessary.
         </div>
       </div>
     </section>
@@ -103,12 +100,24 @@ get_header();
     <div class="docs-section" id="intro">
       <h6 class="docs-header">Is Skeleton for you?</h6>
       <p>You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has ~200 lines of custom CSS</u> (half of which is the docking navigation).</p>
-      <p>Love Skeleton and want to Tweet it, share it, or star it? Well, I appreciate that <3</p>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      <!-- <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.getskeleton.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=151131931646052" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width:140px" allowTransparency="true"></iframe> -->
-      <iframe src="//ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-      <iframe src="//ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <p>Love Skeleton and want to Tweet it, share it, or star it? Well, I appreciate that
+        <3</p>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
+          <script>
+            ! function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? 'http' : 'https';
+              if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+              }
+            }(document, 'script', 'twitter-wjs');
+          </script>
+          <!-- <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.getskeleton.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=151131931646052" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width:140px" allowTransparency="true"></iframe> -->
+          <iframe src="//ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+          <iframe src="//ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
     </div>
 
     <!-- Grid -->
@@ -163,8 +172,8 @@ get_header();
       </div>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
      <code class="code-example-body prettyprint">&lt;!-- .container is main centered wrapper --&gt;
 &lt;div class="container"&gt;
 
@@ -195,7 +204,7 @@ get_header();
 &lt;!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) --&gt;
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -222,8 +231,8 @@ get_header();
       </div>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
 <code class="code-example-body prettyprint">&lt;!-- Standard Headings --&gt;
 &lt;h1&gt;Heading&lt;/h1&gt;
 &lt;h2&gt;Heading&lt;/h2&gt;
@@ -242,7 +251,7 @@ get_header();
 &lt;u&gt;Underlined&lt;/u&gt;
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -267,8 +276,8 @@ get_header();
       </div>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
 <code class="code-example-body prettyprint">&lt;!-- Standard buttons --&gt;
 &lt;a class="button" href="#"&gt;Anchor button&lt;/a&gt;
 &lt;button&gt;Button element&lt;/button&gt;
@@ -282,7 +291,7 @@ get_header();
 &lt;input class="button-primary" value="button input" type="button"&gt;
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -318,8 +327,8 @@ get_header();
       </div>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
 <code class="code-example-body prettyprint">&lt;!-- The above form looks like this --&gt;
 &lt;form&gt;
   &lt;div class="row"&gt;
@@ -350,7 +359,7 @@ get_header();
 &lt;!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% --&gt;
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -388,8 +397,8 @@ get_header();
       </div>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
 <code class="code-example-body prettyprint">&lt;ul&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;
@@ -405,7 +414,7 @@ get_header();
 &lt;!-- Easily substitute any &lt;ul&gt; or an &lt;ol&gt; to get number lists or sublists. Skeleton doesn't support lists nested deeper than 2 levels --&gt;
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -415,14 +424,14 @@ get_header();
       <h6 class="docs-header">Code</h6>
       <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
       <div class="docs-example">
-<pre><code>.some-class {
+        <pre><code>.some-class {
   background-color: red;
 }</code></pre>
       </div>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
 <code class="code-example-body prettyprint">&lt;pre&gt;&lt;code&gt;.some-class {
   background-color: red;
 }&lt;/code&gt;&lt;/pre&gt;
@@ -430,7 +439,7 @@ get_header();
 &lt;!-- Remember every whitespace and break will be preserved in a &lt;pre&gt;, including indentation in your code --&gt;
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -467,8 +476,8 @@ get_header();
       </div>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
 <code class="code-example-body prettyprint">&lt;table class="u-full-width"&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -495,7 +504,7 @@ get_header();
 &lt;/table&gt;
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -521,8 +530,8 @@ get_header();
       </div>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
 <code class="code-example-body prettyprint">/* Mobile first queries */
 
 /* Larger than mobile */
@@ -543,7 +552,7 @@ get_header();
 
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -555,8 +564,8 @@ get_header();
       <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
 
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="code-example">
 <code class="code-example-body prettyprint">/* Utility Classes */
 
 /* Make element full width */
@@ -582,7 +591,7 @@ get_header();
   clear: both; }
 </code>
 </pre>
-<!-- ————————————————————————————————————————————————————— -->
+      <!-- ————————————————————————————————————————————————————— -->
 
 
     </div>
@@ -613,6 +622,6 @@ get_header();
     </div>
 
   </div>
-  
-                
-<?php get_footer(); ?>
+
+
+  <?php get_footer(); ?>
