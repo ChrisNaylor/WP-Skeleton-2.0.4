@@ -53,7 +53,7 @@ add_action('wp_enqueue_scripts', 'Wps_load_styles');
 
 add_action('wp_enqueue_scripts', 'prettify_js');
 function prettify_js() {
-  wp_enqueue_script('prettify-js', 'https://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js', array(), '', true);
+  wp_enqueue_script('prettify-js', 'https://raw.githubusercontent.com/google/code-prettify/master/src/prettify.js', array(), '', true);
 }
 
 
@@ -62,3 +62,12 @@ function sitejs() {
   wp_enqueue_script('sitejs');
 }
 add_action('wp_enqueue_scripts', 'sitejs');
+
+
+
+/*Remove Emoji Code*/
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
