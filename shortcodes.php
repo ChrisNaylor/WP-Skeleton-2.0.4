@@ -35,6 +35,7 @@ function hero() {
 }
 add_shortcode('hero', 'hero');
 
+
 /*
   <div class="section values">
     <div class="container">
